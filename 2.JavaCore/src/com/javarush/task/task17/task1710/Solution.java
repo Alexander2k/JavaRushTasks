@@ -44,7 +44,6 @@ public class Solution {
     private static void addPeople(String[] args)  {
         String date = args[3];
 
-
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH);
         Date d = null;
         try {
@@ -52,11 +51,6 @@ public class Solution {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
-
-
-
-
 
         if (args[2].equals("м"))
         {
@@ -80,9 +74,10 @@ public class Solution {
 
         String date = args[4];
 
-
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH);
+
         Date d = null;
+
         try {
             d = simpleDateFormat.parse(date);
         } catch (ParseException e) {
@@ -106,14 +101,10 @@ public class Solution {
 
 
         p.setName(args[2]);
-
-
         p.setSex(trueSex);
         p.setBirthDate(d);
 
         allPeople.set(index,p);
-
-
 
     }
 
