@@ -34,7 +34,7 @@ public class Manager {      //singleton
         return orderQueue;
     }
 
-    public Queue<Dishes> getDishesQueue() {
+    public synchronized Queue<Dishes> getDishesQueue() {
         return dishesQueue;
     }
 }
