@@ -2,12 +2,12 @@
 ## Idea
 #############
 target/
-#.idea/
-#.idea
+.idea/
+.idea
 .repository/
 *.iml
-#*.iws
-#*.jrtc
+*.iws
+*.jrtc
 #*.java
 #*.class
 #*.info
