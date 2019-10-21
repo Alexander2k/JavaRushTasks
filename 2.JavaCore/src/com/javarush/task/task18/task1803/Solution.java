@@ -32,7 +32,6 @@ public class Solution {
         }
 
         inputStream.close();
-
         int maxVal = Collections.max(map.values());
 
         for(Map.Entry<Integer,Integer> item : map.entrySet())
@@ -43,6 +42,11 @@ public class Solution {
             {
                 System.out.print(key+" ");
             }
+
+            //System.out.print(key+" "+value+" ");
+            //System.out.println(maxVal);
+
+
         }
 
 

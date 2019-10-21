@@ -121,8 +121,6 @@ public class Solution {
 
     }
 
-
-
     private static void infoPeople (String[] args){
         Person p = allPeople.get(Integer.parseInt(args[1]));
 
