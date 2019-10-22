@@ -18,19 +18,17 @@ public class Solution {
 
         BufferedReader fileReader = new BufferedReader(new FileReader(file1));
 
+        String value = fileReader.readLine();
+        String[] vals = value.split(" ");
+        fileReader.close();
 
-
-            String value = fileReader.readLine();
-            String[] vals = value.split(" ");
-            fileReader.close();
-
-            BufferedWriter fileWriter = new BufferedWriter(new FileWriter(file2));
-            for (String v : vals) {
-                double aDouble = Double.parseDouble(v);
-                String str = String.valueOf(Math.round(aDouble));
-                fileWriter.write(str+" ");
-            }
-            fileWriter.close();
+        BufferedWriter fileWriter = new BufferedWriter(new FileWriter(file2));
+        for (String v : vals) {
+            double aDouble = Double.parseDouble(v);
+            String str = String.valueOf(Math.round(aDouble));
+            fileWriter.write(str+" ");
+        }
+        fileWriter.close();
 
 
 
