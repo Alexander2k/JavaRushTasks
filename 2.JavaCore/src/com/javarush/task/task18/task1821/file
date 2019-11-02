@@ -1,0 +1,2 @@
+You can pass character encoding as "US-ASCII" also, as we have done in our Java example, but using StandardCharsets.US_ASCII is safer because there is no chance of any spelling mistake causing UnsupportedEncodingException. See Core Java Volume 1 10th Edition by Cay S. Horstmann to learn more about String in Java.
+Read more: https://javarevisited.blogspot.com/2015/07/how-to-convert-string-or-char-to-ascii-example.html#ixzz6363BzcQv
